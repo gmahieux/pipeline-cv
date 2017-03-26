@@ -1,20 +1,26 @@
 pipeline {
   agent any
   stages {
-    stage ('French') {
+    stage ('Home Automation') {
       steps {
-        echo "Native"
+        echo "Raspberry Pi, Arduino, ..."
       }
     }
-    stage ('English') {
+    stage ('Developer meetups') {
       steps {
-        echo """Able to hold a professional/personnal conversation
-Cambridge BULATS Level 5 (2009)"""
+        echo """ToulouseJUG addict
+ToulouseJAM (speaker on Job DSL plugin)
+ToulouseDevOps"""
       }
     }
-    stage ('German') {
+    stage ('Snowboard') {
         steps {
-          echo "Basics"
+          echo "During winter only :)"
+        }
+    }
+    stage ('Home Construction') {
+        steps {
+          echo "Built my own wooden house from scratch between June 2015 and November 2016"
         }
     }
   }
