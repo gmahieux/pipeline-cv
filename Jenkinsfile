@@ -1,24 +1,34 @@
 pipeline {
   agent any
   stages {
-    stage ('Baccalauréat (1999)') {
+    stage ('Programming') {
       steps {
-        echo "French secondary school diploma/high-school degree"
+        echo """Languages :
+     Java, Groovy, Scala, HTML/CSS/JavaScript...
+Libraries & Framework :
+     Java EE, Hibernate, ElasticSearch, GWT, Angular, Dropwizard, JUnit4 / 5
+Servers :
+     Wildfly/JBoss EAP, Tomcat, TomEE, Apache HTTPd, Nginx
+     """
       }
     }
-    stage ('University degree (2001)') {
+    stage ('Build & Automation') {
       steps {
-        echo "Two-year university degree in technology (French «DUT» attended in IUT Calais)"
+        echo """Jenkins (Pipeline, Job DSL plugin,...)
+Maven, SonarQube, Nexus
+Docker, Vagrant"""
       }
     }
-    stage ("Engineer's degree (2011)") {
+    stage ("Source Control Management") {
       steps {
-        echo "Engineer's degree (evening classes at CNAM Toulouse)"
+        echo """Git, GitHub, Gerrit
+Subversion"""
       }
     }
-    stage ('Scala course (2012)') {
+    stage ('System') {
         steps {
-          echo "Functional Programming Principles In Scala — Coursera (MOOC)"
+          echo """Linux (Fedora/RHEL)
+Windows"""
         }
     }
   }
