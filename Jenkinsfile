@@ -1,34 +1,20 @@
 pipeline {
   agent any
   stages {
-    stage ('Programming') {
+    stage ('French') {
       steps {
-        echo """Languages :
-     Java, Groovy, Scala, HTML/CSS/JavaScript...
-Libraries & Framework :
-     Java EE, Hibernate, ElasticSearch, GWT, Angular, Dropwizard, JUnit4 / 5
-Servers :
-     Wildfly/JBoss EAP, Tomcat, TomEE, Apache HTTPd, Nginx
-     """
+        echo "Native"
       }
     }
-    stage ('Build & Automation') {
+    stage ('English') {
       steps {
-        echo """Jenkins (Pipeline, Job DSL plugin,...)
-Maven, SonarQube, Nexus
-Docker, Vagrant"""
+        echo """Able to hold a professional/personal conversation
+Cambridge BULATS Level 5 (2009)"""
       }
     }
-    stage ("Source Control Management") {
-      steps {
-        echo """Git, GitHub, Gerrit
-Subversion"""
-      }
-    }
-    stage ('System') {
+    stage ('German') {
         steps {
-          echo """Linux (Fedora/RHEL)
-Windows"""
+          echo "Basics"
         }
     }
   }
